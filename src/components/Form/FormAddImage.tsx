@@ -6,7 +6,6 @@ import { useMutation, useQueryClient } from 'react-query';
 import { api } from '../../services/api';
 import { FileInput } from '../Input/FileInput';
 import { TextInput } from '../Input/TextInput';
-
 interface FormAddImageProps {
   closeModal: () => void;
 }
@@ -33,17 +32,11 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
     // TODO MUTATION API POST REQUEST,
     {
       // TODO ONSUCCESS MUTATION
-    }
+    },
   );
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState,
-    setError,
-    trigger,
-  } = useForm();
+  const { register, handleSubmit, reset, formState, setError, trigger } =
+    useForm();
   const { errors } = formState;
 
   const onSubmit = async (data: Record<string, unknown>): Promise<void> => {
