@@ -30,7 +30,7 @@ export function ModalViewImage({
         </ModalBody>
         <ModalFooter bg="pGray.800" borderBottomRadius={10}>
           <Link href={imgUrl} target="_blank" rel="noreferrer" mr="auto">
-            Abrir Original
+            Abrir original
           </Link>
         </ModalFooter>
       </ModalContent>

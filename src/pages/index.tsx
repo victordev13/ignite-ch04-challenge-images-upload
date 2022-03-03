@@ -24,7 +24,7 @@ type Page = {
 };
 
 const fetch = ({ pageParam = null }): Promise<AxiosResponse<Page>> => {
-  return api.get('/images');
+  return api.get('/api/images');
 };
 
 export default function Home(): JSX.Element {
