@@ -26,7 +26,14 @@ export function ModalViewImage({
       <ModalContent bg="transparent">
         <ModalCloseButton />
         <ModalBody padding={0}>
-          <Image src={imgUrl} w="100%" h="100%" maxW="900px" maxH="600px" />
+          <Image
+            src={imgUrl}
+            w="100%"
+            h="100%"
+            maxW="900px"
+            maxH="600px"
+            objectFit="contain"
+          />
         </ModalBody>
         <ModalFooter bg="pGray.800" borderBottomRadius={10}>
           <Link href={imgUrl} target="_blank" rel="noreferrer" mr="auto">

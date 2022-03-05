@@ -24,7 +24,11 @@ type Page = {
 };
 
 const fetch = ({ pageParam = null }): Promise<AxiosResponse<Page>> => {
-  return api.get('/api/images');
+  return api.get(`/api/images`, {
+    params: {
+      after: pageParam,
+    },
+  });
 };
 
 export default function Home(): JSX.Element {
@@ -61,6 +65,7 @@ export default function Home(): JSX.Element {
           <LoadMoreButton
             onClick={() => fetchNextPage()}
             isLoading={isFetchingNextPage}
+            mt="40px"
           />
         )}
       </Box>
