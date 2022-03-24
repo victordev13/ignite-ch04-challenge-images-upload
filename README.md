@@ -1,4 +1,4 @@
-### Challenge developed at chapter 05 of [Ignite ReactJS](https://www.rocketseat.com.br/ignite) of Rocketseat
+### Challenge developed at chapter 04 of [Ignite ReactJS](https://www.rocketseat.com.br/ignite) of Rocketseat
 
  - Title: "Upload de imagens"
  - Objective: "Aplicar conhecimentos adquiridos até o momento, e utilizar as libs abordadas no capítulo: React Query, React Hook Form"
